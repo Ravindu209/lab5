@@ -1,0 +1,135 @@
+/*
+Name: Ravindu Nethsara
+Unit: COS10026
+Description: CSS layout styling for Lab 05
+*/
+
+/* Step 2 */
+
+/* Keep the aside visible when the mouse is over it */
+aside:hover {
+    display: block;
+}
+
+/* Display menu paragraphs on the same line */
+.menu {
+    display: inline-block;
+}
+
+
+/* Step 3 */
+
+/* Style the aside */
+aside {
+    border: 1px solid #660066;
+    border-radius: 10px;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-image: url("images/fade.jpg");
+}
+
+/* Style the header */
+header {
+    border: 1px solid darkgray;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: lightgray;
+    text-align: center;
+}
+
+/* Style the top of the footer */
+footer {
+    border-top: 4px double #666;
+}
+
+
+/* Step 4 */
+
+/* Move aside to the right */
+aside {
+    width: 30%;
+    float: right;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+/* Float the lists section to the left */
+#lists {
+    float: left;
+}
+
+/* Centre the table */
+table {
+    margin: auto;
+}
+
+/* Float the tables section to the right */
+#tables {
+    float: right;
+}
+
+/* Keep hyperlinks below the floated sections */
+#hyperlinks {
+    clear: both;
+    float: left;
+}
+
+/* Float images section to the right */
+#images {
+    float: right;
+}
+
+/* Add a border around the figure */
+figure {
+    border: 2px solid #ccc;
+}
+
+/* Set the width and alignment of the sections */
+#lists,
+#tables,
+#hyperlinks 
+#images {
+    text-align: center;
+    width: 45%;
+}
+
+/* Keep lists left aligned */
+ol,
+ul,
+dl {
+    text-align: left;
+}
+
+/* Keep article readable on narrow screens */
+article {
+    min-width: 30em;
+}
+
+/* Keep footer at the bottom */
+footer {
+    clear: both;
+}
+
+
+/* Step 5 */
+
+/* Arrange footer paragraphs horizontally */
+footer p {
+    display: inline-block;
+    width: 33%;
+}
+
+/* First footer paragraph */
+footer p:first-child {
+    float: left;
+}
+
+/* Second footer paragraph */
+footer p:nth-child(2) {
+    text-align: center;
+}
+
+/* Last footer paragraph */
+footer p:last-child {
+    float: right;
+    text-align: right;
+}
